@@ -9,14 +9,14 @@ while (answer == "NO") {
 }
 var player = prompt("Pick a name for your character:")
 while (answer == "YES"){
+	 if (wins === 3) {
+      console.log( "Winner: " + player + "!" + " You beat Almighty Grant, Congrats!");
+      break; 
+    }
 userHealth -= Math.floor((Math.random() * 2) + 1);
 grantHealth -= Math.floor((Math.random() * 2) + 1);
 console.log (player + "'s health is " + userHealth + "!");
 console.log ("Almighty Grant's health is " + grantHealth + "!");
-    if (wins === 3) {
-      console.log( "Winner: " + player + "!" + " You beat Almighty Grant, Congrats!");
-      break; 
-    }
 	if (grantHealth <= 0) {
 		++wins;
         grantHealth = 10;
