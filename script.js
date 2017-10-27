@@ -7,7 +7,7 @@ while (answer == "NO") {
   answer = prompt ("Come on, you know you wanna! Say yes!");
   answer = answer.toUpperCase();
 }
-var player = prompt("Pick a name for your character:")
+var player = prompt("Pick a name for your character:");
 while (answer == "YES"){
 	 if (wins === 3) {
       console.log( "Winner: " + player + "!" + " You beat Almighty Grant, Congrats!");
@@ -23,6 +23,6 @@ console.log ("Almighty Grant's health is " + grantHealth + "!");
 		console.log ( "You Win! On to the next level." );
 	}if (userHealth <= 0) {
 		console.log("Game Over");
-		playing=false;
+		break;
 	}
 }
