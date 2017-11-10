@@ -1,0 +1,101 @@
+body {
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: rgb(133, 187, 235);  
+	font-size: 15px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	font-family: Nunito; 
+
+}
+.display {
+	display: flex;
+	background-color: rgba(133, 187, 235, 0.5);
+	border-radius: 30px;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: space-around;
+	width: 50%; 
+	padding: 20px;
+}
+.first {
+	display: flex;
+	background-color: rgba(133, 187, 235, 0.5);
+	border-radius: 30px;
+	flex-direction: column;
+	align-items: center;
+	width: 50%;
+	margin: 5px;
+	padding: 5px;
+	font-size: 12px;
+	height: 200px;
+}
+button {
+	padding: 10px;
+	background-image: url("bb.jpg"); 
+	border-radius: 10px;
+	color:white;
+	border-color: #ff9933;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 25px;
+	font-size: 20px;
+	font-family: Nunito; 
+	font-weight: 700;
+}
+div div{
+	height:100px;
+	width: 100px;
+	padding: 20px;
+	background-color: #11db5e;
+	border-radius: 20px;
+	display: flex;
+	justify-content:center;
+	color: white;
+	margin: 10px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+
+}
+.stats {
+	display: block;
+	text-align: center;
+	border-radius: 20px;
+	background-color: rgba(133, 187, 235, 0.5);
+	color: white;
+	height: 100px;
+	width: 50%;
+	font-weight: 700;
+	padding: 20px;
+	font-size: 20px;
+}
+.attack {
+	display: inline-flex;
+}
+.eName{
+	flex-basis: 40%;
+	font-size: 40px;
+	} 
+.name {
+	flex-basis: 100%;
+	margin-top: 20px;
+	font-size: 40px;
+}
+.eHealthInfo {
+	padding: 10px;
+	flex-basis: 40%;
+	height: 120px;
+}
+.healthInfo, .healsRInfo {
+	flex-basis: 100%; 
+}
+.winsInfo {
+	flex-basis: 100%;
+}
+progress {
+	width: 100%;
+}
