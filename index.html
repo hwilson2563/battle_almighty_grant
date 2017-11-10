@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<title>Game Time</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet" >
 </head>
 <body>
+	<div class="first">
+	<h1 class= "begin"> Do you want to play a game ? </h1>
+	<button class = "beginButton" type="button" onclick="startGame()"> Play </button>
+	</div>
+	<div class="display">
+	  <div class="name">
+	  </div>
+	  <div class= "healsRInfo">
+	  	<p class="healsR"></p>
+	  	<progress id= "healsR" value="0" max="2"></progress>
+	 	</div>
+	  <div class="healthInfo">
+	  	<p class="health"> </p>
+	  	<progress id = "health" value="40" max="40"></progress>
+	  </div>
+	  <div class="winsInfo" >
+	  	<p class= "wins"> </p>
+	  	<progress id = "wins" value="0" max="5"></progress>
+	  </div>
+	  <div class="eName">
+	  </div>
+	  <div class="eHealthInfo">
+	  	<p class="eHealth"> </p>
+	  	<progress id="eHealth" value="10" max="10"></progress>
+	  </div>
+  </div>
+  <div id="buttonForGame">
+		<button type="button" class="attack" value="attack" onclick="startCombat(this.value)"> Attack</button>
+	  <button type="button" value="heal" onclick="startCombat(this.value)"> Heal</button>
+	  <button type="button" value="quit" onclick="startCombat(this.value)">Quit</button>
+  </div>
+	  <div class="stats">
+	  </div>
 <!--- <script src="script.js" type="text/javascript" ></script>  -->
-<script src="scriptPart2.js" type="text/javascript" ></script>
+<!--- <script src="scriptPart2.js" type="text/javascript" ></script> -->
+<!--- <script src="scriptPart3.js" type="text/javascript" ></script> -->
+<script src="scriptPart4.js" type="text/javascript" ></script>
+
 </body>
 </html>
